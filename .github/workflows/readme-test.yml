@@ -25,7 +25,7 @@ jobs:
         run: pip install pytest
       - name: Test with pytest
         run: pytest test_src
-      - name: Markdown
-      - name: Check modified
-      - name: Commit files
-      - name: Push changes
+      # - name: Markdown
+      # - name: Check modified
+      # - name: Commit files
+      # - name: Push changes
