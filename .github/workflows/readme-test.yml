@@ -35,7 +35,7 @@ jobs:
         continue-on-error: true
       - name: Commit files
         if: steps.modified.outcome == 'failure'
-        runs: |
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
           git commit -m "Embedding code into Markdown" -a
