@@ -41,7 +41,7 @@ jobs:
           git commit -m "Embedding code into Markdown" -a
       - name: Push changes
         if: steps.modified.outcome == 'failure'
-        uses: ad-m/github-push-actions@master
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref }}
